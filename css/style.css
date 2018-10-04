@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bordercolor{
+    border: solid black 3px;
+    padding:10px;
+    margin:10px;
+}
+
+div.clearfix{
+    clear: both;
+}
+
+/* header */
+
+header{
+    background-color:darkblue;
+    
+}
+
+header h1{
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+header div.banner{
+    background: url(../img/background.jpg);
+}
+
+header div.banner h2{
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* main */
+
+body main {
+    background: silver;
+    padding: 5%;
+}
+
+/* main aside */
+
+body main aside{
+    width:25%;
+    height:400px;
+    min-height: 400px;
+    max-height: 400px;
+    display: inline-block; 
+    float:left;
+}
+
+body main aside form textarea{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* main section */
+
+body main section.section_un{
+    width:65%;
+    height:400px;
+    min-height: 400px;
+    max-height: 400px;
+    display: inline-block;
+}
+
+body main section.section_un img{
+    height: 100%;
+}
+
+body main section.section_deux{
+    max-height:100%;
+    background: grey
+}
+
+body main section.section_deux div.un{
+    width : 80%;
+    display:inline-block;
+    float:left;
+}
+
+body main section.section_deux div.deux{
+    width:15%;
+    display:inline-block;  
+}
+
+body main section.section_deux div.deux img{
+    width:100%;
+}
+
+/* footer */
+
+body footer{
+    background-color: darkblue;
+}
+
+body footer b{
+    color: white;
+    text-align: right;
+    display: block;
+}
