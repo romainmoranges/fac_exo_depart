@@ -3,11 +3,10 @@
     padding: 0px;
 }
 
-.bordercolor{
+/* .bordercolor{
     border: solid black 3px;
-    padding:10px;
     margin:10px;
-}
+} */
 
 div.clearfix{
     clear: both;
@@ -17,7 +16,9 @@ div.clearfix{
 
 header{
     background-color:darkblue;
-    
+    padding-left:15%;
+    padding-right:15%;
+
 }
 
 header h1{
@@ -25,82 +26,127 @@ header h1{
     text-transform: capitalize;
 }
 
-header div.banner{
+div.banner{
     background: url(../img/background.jpg);
 }
 
-header div.banner h2{
+div.banner h2{
     text-align: center;
     color: white;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-
 /* main */
 
-body main {
+main {
     background: silver;
-    padding: 5%;
+    padding-left:15%;
+    padding-right:15%;
+    padding-top:50px;
+    padding-bottom:50px;
+    display:flex;
 }
 
+@media screen and (max-width: 640px) { 
+    main {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding-left:0%;
+        padding-right:0%;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    main aside{
+        width:90%;
+        margin:0px;
+    }
+
+    main section.section_un{
+        width:90%;
+        margin:0px;
+    }
+}
 /* main aside */
 
-body main aside{
-    width:25%;
-    height:400px;
-    min-height: 400px;
-    max-height: 400px;
-    display: inline-block; 
-    float:left;
+main aside{
+    width:23%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right:1%;
 }
 
-body main aside form textarea{
-    max-width: 100%;
-    max-height: 100%;
+main aside h3{
+    height:9%;
+    text-align: center;
 }
+
+main aside form{
+    height:90%;
+    border:whitesmoke 1px solid;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+}
+
+main aside form h4{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+main aside form textarea{
+    resize: none;
+    height:70%;
+}
+
 
 /* main section */
 
-body main section.section_un{
-    width:65%;
-    height:400px;
-    min-height: 400px;
-    max-height: 400px;
-    display: inline-block;
+main section.section_un{
+    width: 74%;
+    margin-left:1%;
 }
 
-body main section.section_un img{
-    height: 100%;
+main section.section_un img{
+    width: 100%;
 }
 
-body main section.section_deux{
+/* Prefooter section */
+
+section.section_deux{
     max-height:100%;
-    background: grey
+    background: grey;
+    padding-left:15%;
+    padding-right:15%;
 }
 
-body main section.section_deux div.un{
+section.section_deux div.un{
     width : 80%;
     display:inline-block;
     float:left;
 }
 
-body main section.section_deux div.deux{
+section.section_deux div.deux{
     width:15%;
     display:inline-block;  
 }
 
-body main section.section_deux div.deux img{
+section.section_deux div.deux img{
     width:100%;
 }
 
 /* footer */
 
-body footer{
+footer{
     background-color: darkblue;
+    padding-left:1%;
+    padding-right:1%;
 }
 
-body footer b{
+footer b{
     color: white;
     text-align: right;
     display: block;
